@@ -1,7 +1,7 @@
 {
   "name": "opencode-ctf-toggle",
   "version": "1.0.0",
-  "description": "Toggle CTF mode guidance in OpenCode with slash commands.",
+  "description": "OpenCode 破甲:一条斜杠命令开关攻防/CTF 攻坚模式提示。Armor-breaking CTF mode toggle for OpenCode.",
   "type": "module",
   "exports": {
     "./server": {
@@ -22,6 +22,7 @@
     "opencode",
     "opencode-plugin",
     "ctf",
+    "破甲",
     "security"
   ],
   "engines": {
