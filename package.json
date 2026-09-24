@@ -1,0 +1,42 @@
+{
+  "name": "opencode-ctf-toggle",
+  "version": "1.0.0",
+  "description": "Toggle CTF mode guidance in OpenCode with slash commands.",
+  "type": "module",
+  "exports": {
+    "./server": {
+      "import": "./index.js"
+    },
+    "./tui": {
+      "import": "./tui.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "tui.js",
+    "ctf-toggle-prompt.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "ctf",
+    "security"
+  ],
+  "engines": {
+    "opencode": ">=1.18.0"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.14.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s2cc6thm/opencode_ctf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/s2cc6thm/opencode_ctf/issues"
+  },
+  "homepage": "https://github.com/s2cc6thm/opencode_ctf#readme"
+}
