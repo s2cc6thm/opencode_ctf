@@ -1,0 +1,22 @@
+{
+  "name": "@knight/opencode-ctf-toggle",
+  "version": "1.0.0",
+  "description": "Local OpenCode CTF mode toggle plugin",
+  "type": "module",
+  "exports": {
+    "./server": {
+      "import": "./index.js"
+    },
+    "./tui": {
+      "import": "./tui.js"
+    }
+  },
+  "engines": {
+    "opencode": ">=1.18.0"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.14.0"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
