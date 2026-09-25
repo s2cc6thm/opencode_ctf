@@ -1,7 +1,7 @@
 {
   "name": "opencode-ctf-toggle",
-  "version": "1.0.0",
-  "description": "OpenCode 破甲:一条斜杠命令开关攻防/CTF 攻坚模式提示。Armor-breaking CTF mode toggle for OpenCode.",
+  "version": "1.1.0",
+  "description": "OpenCode CTF mode toggle with a persistent engagement ledger, automatic flag capture, and a TUI status badge.",
   "type": "module",
   "exports": {
     "./server": {
@@ -18,20 +18,31 @@
     "README.md",
     "LICENSE"
   ],
+  "scripts": {
+    "check": "node --check index.js && node --check tui.js",
+    "pack:dry-run": "npm pack --dry-run"
+  },
   "keywords": [
     "opencode",
     "opencode-plugin",
     "ctf",
-    "破甲",
-    "security"
+    "security",
+    "tui",
+    "ledger"
   ],
-  "engines": {
-    "opencode": ">=1.18.0"
+  "dependencies": {
+    "@opentui/solid": ">=0.4.0 <0.6.0",
+    "solid-js": "1.9.12",
+    "zod": "^4.1.8"
   },
   "peerDependencies": {
     "@opencode-ai/plugin": ">=1.14.0"
   },
+  "engines": {
+    "opencode": ">=1.18.0"
+  },
   "license": "MIT",
+  "author": "s2cc6thm",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/s2cc6thm/opencode_ctf.git"
@@ -39,5 +50,8 @@
   "bugs": {
     "url": "https://github.com/s2cc6thm/opencode_ctf/issues"
   },
-  "homepage": "https://github.com/s2cc6thm/opencode_ctf#readme"
+  "homepage": "https://github.com/s2cc6thm/opencode_ctf#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }

@@ -1,3 +1,14 @@
 node_modules/
+*.tgz
 *.tmp
 *.log
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+state.json
+notes/
+ctf-notes-*.md
+.DS_Store
+Thumbs.db
